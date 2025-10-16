@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spam Mail Classifier</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Spam Mail Classifier</h2>
+        <form action="/predict" method="post">
+            <textarea name="message" rows="5" placeholder="Enter message here..." required></textarea>
+            <button type="submit">Predict</button>
+        </form>
+        <h3>{{ prediction_text }}</h3>
+    </div>
+</body>
+</html>
